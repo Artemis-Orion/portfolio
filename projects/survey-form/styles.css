@@ -1,0 +1,155 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900
+'); */
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+body {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #7707cc90;
+  background-image: linear-gradient(
+    144deg,
+    rgba(130, 30, 230, 0.7),
+    rgba(180, 30, 250, 0.3)
+  ), url(https://i.imgur.com/r8lmrAN.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 900;
+  line-height: 1.4;
+  font-size: 4rem;
+}
+
+p {
+  font-size: 2.25rem;
+}
+
+h1, p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 75%;
+  margin: 3.3rem auto 0 auto;
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.9rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.8rem;
+  color: #e0e0e0;
+}
+
+h1.center-text {
+  text-align: center;
+  vertical-align: center;
+  margin-top: 64px;
+}
+
+p.center-text {
+  text-align: center;
+  vertical-align: center;
+  margin-top: 42px;
+}
+
+form {
+  background: #7707cc;
+  padding: 2.5rem 0.75rem;
+  border-radius: 0.25rem;
+  align-items: center;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 75%;
+  height: 2.5rem;
+  padding: 0.4rem 0.75rem;
+  color: #554275;
+  background-color: #f0f0f0;
+  background-clip: padding-box;
+  border: 1.5px solid #bbeedd;
+  border-radius: 0.5rem;
+  transition: border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #bb80ee;
+  outline: 0;
+  box-shadow: 0 0 0 0.5 rgba(99, 80, 144, 0.4);
+}
+
+.input-radio, .input-checkbox {
+  display: inline-block;
+  margin-right: 0.75rem;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+}
+
+.input-textarea {
+  min-height: 150px;
+  width: 100%;
+  padding: 0.75rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #2099ff;
+  color: inherit;
+  border-radius: 2.5px;
+  cursor: pointer;
+}

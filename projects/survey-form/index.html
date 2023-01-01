@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utc-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' href='styles.css' />
+  </head>
+    <body>
+      <header class='header'>
+        <h1 id='title' class='center-text'>This is a Survey</h1>
+        <p id='description' class='center-text'>Thank you for taking our survey!</p>
+      </header>
+      <div class='container'>
+      <form id='survey-form'>
+        <div class='form-group'>
+          <label id='name-label' for='name'>Name:</label>
+          <input
+            type='text'
+            name='name'
+            id='name'
+            class='form-control'
+            placeholder='Full Name'
+            required
+          />
+        </div>
+        <div class='form-group'>
+          <label id='email-label' for='email'>Email:</label>
+          <input
+            type='email'
+            name='email'
+            id='email'
+            class='form-control'
+            placeholder='Enter your Email'
+            required
+          />
+        </div>
+        <div class='form-group'>
+          <label id='number-label' for='number'>Age <span class="clue">(optional)</span>:</label>
+          <input
+            type='number'
+            name='age'
+            id='number'
+            min='0'
+            max='120'
+            class='form-control'
+            placeholder='Age'
+          />
+         </div>
+         <div class='form-group'>
+          <label id='education-label' for='dropdown'>What's your current level of education?</label>
+          <select id='dropdown' name='education' class='form-control' required>
+            <option disabled selected value>Select current level of education</option>
+            <option value='k-12'>I haven't finished high school</option>
+            <option value='GED'>I have graduated high school</option>
+            <option value='college'>I have attended college, but not graduated</option>
+            <option value='degree'>I have at least 1 degree</option>
+            <option value='other'>Other</option>
+          </select>
+        </div>
+        <div class='form-group'>
+          <p>Do you like this survey so far?</p>
+          <label>
+            <input
+              type='radio'
+              class='input-radio'
+              name='do-you-like-me'
+              value='Awesome'
+              checked>It's awesome!</input>
+          </label>
+          <label>
+            <input
+              type='radio'
+              class='input-radio'
+              name='do-you-like-me'
+              value='ok'>It's okay</input>
+          </label>
+          <label>
+            <input
+              type='radio'
+              class='input-radio'
+              name='do-you-like-me'
+              value='IDK'>I don't really care</input>
+            </label>
+          <label>
+            <input
+              type='radio'
+              class='input-radio'
+              name='do-you-like-me'
+              value='hate'>I hate it!</input>
+          </label>
+        </div>
+        <div class='form-group'>
+          <p>
+            What types of cuisine do you like?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label>
+            <input
+             name='prefer'
+             type='checkbox'
+             class='input-checkbox'
+             value='asian'
+            />Asian
+          </label>
+          <label>
+            <input
+             name='prefer'
+             type='checkbox'
+             class='input-checkbox'
+             value='italian'
+            />Italian
+          </label>
+          <label>
+            <input
+             name='prefer'
+             type='checkbox'
+             class='input-checkbox'
+             value='mexican'
+            />Mexican
+          </label>
+          <label>
+            <input
+             name='prefer'
+             type='checkbox'
+             class='input-checkbox'
+             value='African'
+            />African
+          </label>
+          <label>
+            <input
+             name='prefer'
+             type='checkbox'
+             class='input-checkbox'
+             value='American'
+            />American
+          </label>
+          <label>
+            <input
+             name='prefer'
+             type='checkbox'
+             class='input-checkbox'
+             value='other'
+            />Something else
+          </label>
+        </div>
+        <div class='form-group'>
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class='form-group'>
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+      </div>
+    </body>
+</html>
