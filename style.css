@@ -1,0 +1,104 @@
+/* color pallette:
+    #263664 > rgba(38, 54, 100, 1)
+    #168cae > rgba(22, 140, 174, 1)
+    #40f4ff > rgba(64, 244, 255, 1)
+    #ddebee > rgba(221, 235, 238, 1)
+    #ea5fdc > rgba(234, 95, 220, 1)
+    */
+@font-face {
+    font-family: "Advent";
+    font-weight: 100;
+    font-style: normal;
+    src: url(./fonts/Advent_Pro/AdventPro-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Advent";
+    font-weight: 200;
+    font-style: normal;
+    src: url(./fonts/Advent_Pro/AdventPro-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Advent";
+    font-weight: 300;
+    font-style: normal;
+    src: url(./fonts/Advent_Pro/AdventPro-Light.ttf);
+}
+
+html {
+    background-image: url(./images/starry-sky.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(38, 65, 100, 1);
+    background-blend-mode: hard-light;
+}
+
+main {
+    border-radius: 2rem;
+    background: rgba(38, 65, 100, .8);
+    padding: 2rem;
+   /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+    box-shadow: rgba(234, 95, 220, 0.3) 0 0 5px 5px, rgba(234, 95, 220, 0.2) 0 0 5px 10px, rgba(234, 95, 220, 0.1) 0 0 5px 15px, rgba(234, 95, 220, 0.05) 0 0 5px 20px, rgba(234, 95, 220, 0.025) 0 0 5px 25px;
+}
+
+
+h1 {
+    color: rgba(221, 235, 238, 1);
+    font-size: 8vh;
+    margin-top: 0%;
+    text-shadow: 0 0 .5em rgba(231, 245, 248, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dividing-title {
+    color: rgba(64, 244, 255, 1);
+    font-size: 4vh;
+    text-shadow: 0 0 .5em rgba(100, 244, 255, 1);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dividing-title::before,
+.dividing-title::after {
+    content: '';
+    display: block;
+    height: 0.09em;
+    min-width: 25vw;
+}
+.dividing-title::before {
+    background: linear-gradient(to right, rgba(38, 65, 100, 0), rgba(64, 244, 255, 1));
+    margin-right: 5vh;
+}
+.dividing-title::after {
+    background: linear-gradient(to left, rgba(38, 65, 100, 0), rgba(64, 244, 255, 1));
+    margin-left: 5vh;
+}
+
+a {
+    color: rgba(64, 244, 255, 1);
+    text-shadow: 0 0 .5em rgba(100, 244, 255, 1);
+    text-decoration: none;
+    font-size: 3vh;
+}
+
+a:hover {
+    color: rgba(234, 95, 220, 1);
+    text-shadow: 0 0 .5em rgba(234, 95, 220, 1);
+}
+
+.blur {
+    margin: 2rem;
+    padding: 3rem;
+    border-radius: 3rem;
+}
+
+.projects {
+    display: grid;
+}
